@@ -1,0 +1,156 @@
+<h1>Trials#index</h1>
+<p>Find me in app/views/trials/index.html.erb</p>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Closure</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @trials.each do |trial| %>
+  <tr>
+
+	<td> <%= trial.trl_ser_no %> </td>
+	<td> <%= trial.trl_code %> </td>
+	<td> <%= trial.trl_activation %> </td>
+	<td> <%= trial.trl_closure %> </td>
+	<td> <%= trial.trl_estimated_termination %> </td>
+	<td> <%= trial.trl_termination %> </td>
+	<td> <%= trial.trl_swissmedic_nr %> </td>
+	<td> <%= trial.trl_bag_nr %> </td>
+	<td> <%= trial.trl_swissmedic_notification %> </td>
+	<td> <%= trial.trl_eudract_nr %> </td>
+	<td> <%= trial.trl_bag_notification %> </td>
+	<td> <%= trial.trl_novartis_nr %> </td>
+	<td> <%= trial.trl_interim_report_1 %> </td>
+	<td> <%= trial.trl_interim_report_2 %> </td>
+	<td> <%= trial.trl_interim_report_3 %> </td>
+	<td> <%= trial.trl_final_report %> </td>
+	<td> <%= trial.trl_other_date_1 %> </td>
+	<td> <%= trial.trl_other_date_2 %> </td>
+	<td> <%= trial.trl_other_date_3 %> </td>
+	<td> <%= trial.trl_other_date_spec_1 %> </td>
+	<td> <%= trial.trl_other_date_spec_2 %> </td>
+	<td> <%= trial.trl_other_date_spec_3 %> </td>
+	<td> <%= trial.trl_patient_fee_1 %> </td>
+	<td> <%= trial.trl_patient_fee_2 %> </td>
+
+	<td> <%= trial.trl_name %> </td>
+	<td> <%= trial.trl_alias_name_1 %> </td>
+	<td> <%= trial.trl_alias_name_2 %> </td>
+	<td> <%= trial.trl_phase_1 %> </td>
+	<td> <%= trial.trl_phase_2 %> </td>
+	<td> <%= trial.trl_phase_3 %> </td>
+	<td> <%= trial.trl_reg %> </td>
+	<td> <%= trial.trl_pilot %> </td>
+	<td> <%= trial.trl_origin %> </td>
+	<td> <%= trial.trl_dgp_code %> </td>
+	<td> <%= trial.trl_has_pform %> </td>
+	<td> <%= trial.trl_has_cpr %> </td>
+	<td> <%= trial.trl_in_sinatras %> </td>
+	<td> <%= trial.trl_too_old_for_patras %> </td>
+	<td> <%= trial.trl_text %> </td>
+	<td> <%= trial.trl_chair_1 %> </td>
+	<td> <%= trial.trl_chair_2 %> </td>
+	<td> <%= trial.trl_chair_3 %> </td>
+	<td> <%= trial.trl_stf_ser_no_tc_1 %> </td>
+	<td> <%= trial.trl_stf_ser_no_tc_2 %> </td>
+	<td> <%= trial.trl_stf_ser_no_mon_1 %> </td>
+	<td> <%= trial.trl_stf_ser_no_mon_2 %> </td>
+	<td> <%= trial.trl_stf_ser_no_stat_1 %> </td>
+	<td> <%= trial.trl_stf_ser_no_stat_2 %> </td>
+	<td> <%= trial.trl_drug_brand_name_1 %> </td>
+	<td> <%= trial.trl_drug_brand_name_2 %> </td>
+	<td> <%= trial.trl_drug_brand_name_3 %> </td>
+	<td> <%= trial.trl_drug_brand_name_4 %> </td>
+	<td> <%= trial.trl_drug_brand_name_5 %> </td>
+	<td> <%= trial.trl_drug_generic_name_1 %> </td>
+	<td> <%= trial.trl_drug_generic_name_2 %> </td>
+	<td> <%= trial.trl_drug_generic_name_3 %> </td>
+	<td> <%= trial.trl_drug_generic_name_4 %> </td>
+	<td> <%= trial.trl_drug_generic_name_5 %> </td>
+	<td> <%= trial.trl_order %> </td>
+	<td> <%= trial.trl_accrual_target %> </td>
+	<td> <%= trial.trl_patients_count %> </td>
+	<td> <%= trial.trl_points_per_patient %> </td>
+	<td> <%= trial.trl_forms_on_internet %> </td>
+	<td> <%= trial.trl_listed_on_accrual %> </td>
+	<td> <%= trial.trl_memo %> </td>
+	<td> <%= trial.trl_created_by %> </td>
+	<td> <%= trial.trl_updated_by %> </td>
+	<td> <%= trial.trl_created %> </td>
+	<td> <%= trial.trl_updated %> </td>
+	<td> <%= trial.trl_publication_state %> </td>
+	<td> <%= trial.trl_archive %> </td>
+	<td> <%= trial.trl_patient_followup %> </td>
+	<td> <%= trial.trl_to_do_list %> </td>
+	<td> <%= trial.trl_contacts %> </td>
+	<td> <%= trial.trl_time_to_spend %> </td>
+	<td> <%= trial.trl_data_collection %> </td>
+	<td> <%= trial.trl_estimated_closure_accrual %> </td>
+	<td> <%= trial.trl_tc_1 %> </td>
+	<td> <%= trial.trl_tc_2 %> </td>
+	<td> <%= trial.trl_mon_1 %> </td>
+	<td> <%= trial.trl_mon_2 %> </td>
+	<td> <%= trial.trl_stat_1 %> </td>
+	<td> <%= trial.trl_stat_2 %> </td>
+	<td> <%= trial.trl_disabled_for_externals %> </td>
+	<td> <%= trial.trl_reg_disabled_for_externals %> </td>
+	<td> <%= trial.trl_tc_head %> </td>
+
+	<td> <%= trial.trl_lead_ec_submission_date %> </td>
+	<td> <%= trial.trl_lplt_date %> </td>
+	<td> <%= trial.trl_main_analysis_date %> </td>
+	<td> <%= trial.trl_estimated_lead_ec_approval_date %> </td>
+	<td> <%= trial.trl_estimated_lead_ec_site_sm_submission_date %> </td>
+	<td> <%= trial.trl_estimated_lplt_date %> </td>
+	<td> <%= trial.trl_estimated_lplv_date %> </td>
+	<td> <%= trial.trl_estimated_lead_ec_submission_date %> </td>
+	<td> <%= trial.trl_estimated_activation_date %> </td>
+	<td> <%= trial.trl_estimated_main_analysis_date %> </td>
+	<td> <%= trial.trl_lead_ec_site %> </td>
+	<td> <%= trial.trl_destruction_of_documentation_by_sites %> </td>
+	<td> <%= trial.trl_destruction_of_documentation_by_sakk %> </td>
+	<td> <%= trial.trl_end_of_archiving_date %> </td>
+	<td> <%= trial.trl_lead_ec_nr %> </td>
+	<td> <%= trial.trl_clinicaltrialgov_entry_status %> </td>
+	<td> <%= trial.trl_clinicaltrialgov_entry_date %> </td>
+	<td> <%= trial.trl_safety_reporting %> </td>
+	<td> <%= trial.trl_sakk_sponsors_responsibility %> </td>
+	<td> <%= trial.trl_temporarily_closed %> </td>
+	<td> <%= trial.trl_clinical_data_manager_1 %> </td>
+	<td> <%= trial.trl_clinical_data_manager_2 %> </td>
+	<td> <%= trial.trl_drug_generic_name_6 %> </td>
+	<td> <%= trial.trl_drug_generic_name_7 %> </td>
+	<td> <%= trial.trl_drug_generic_name_8 %> </td>
+	<td> <%= trial.trl_drug_generic_name_9 %> </td>
+	<td> <%= trial.trl_drug_generic_name_10 %> </td>
+	<td> <%= trial.trl_drug_generic_name_11 %> </td>
+	<td> <%= trial.trl_drug_generic_name_12 %> </td>
+	<td> <%= trial.trl_drug_generic_name_13 %> </td>
+	<td> <%= trial.trl_drug_generic_name_14 %> </td>
+	<td> <%= trial.trl_drug_generic_name_15 %> </td>
+	<td> <%= trial.trl_drug_comments_1 %> </td>
+	<td> <%= trial.trl_drug_comments_2 %> </td>
+	<td> <%= trial.trl_drug_comments_3 %> </td>
+	<td> <%= trial.trl_drug_comments_4 %> </td>
+	<td> <%= trial.trl_drug_comments_5 %> </td>
+	<td> <%= trial.trl_drug_comments_6 %> </td>
+	<td> <%= trial.trl_drug_comments_7 %> </td>
+	<td> <%= trial.trl_drug_comments_8 %> </td>
+	<td> <%= trial.trl_drug_comments_9 %> </td>
+	<td> <%= trial.trl_drug_comments_10 %> </td>
+	<td> <%= trial.trl_drug_comments_11 %> </td>
+	<td> <%= trial.trl_drug_comments_12 %> </td>
+	<td> <%= trial.trl_drug_comments_13 %> </td>
+	<td> <%= trial.trl_drug_comments_14 %> </td>
+	<td> <%= trial.trl_drug_comments_15 %> </td>
+
+
+
+  </tr>
+<% end %>
+</table>
