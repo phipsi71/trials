@@ -1,8 +1,10 @@
 Mssqltest::Application.routes.draw do
   # inserted by railg controllert
-  get "trials/index"  
+  get "trials/index" 
 
   resources :houses
+
+  resources :trials
 
 
   # The priority is based upon order of creation:

@@ -39,3 +39,10 @@ gem 'jquery-rails'
 
 gem 'tiny_tds'
 gem 'activerecord-sqlserver-adapter'
+gem 'twitter-bootstrap-rails', :git => 'https://github.com/seyhunak/twitter-bootstrap-rails.git'
+# gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+#                           :github => 'anjlab/bootstrap-rails',
+#                           :branch => '3.0.0'
+
+gem 'less-rails'
+gem 'font-awesome-less'
